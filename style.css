@@ -1,0 +1,48 @@
+body {
+
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: pink;
+    background-image: url('tata.jpg'); /* Menambahkan gambar latar belakang */
+    background-size: cover; /* Menyesuaikan ukuran gambar dengan layar */
+}
+
+.container {
+    max-width: 800px;
+    color: deeppink;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: whitesmoke; /* Warna latar belakang dengan tingkat transparansi */
+}
+
+
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.content {
+    text-align: center;
+    color: deeppink;
+}
+
+.gambar {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    max-height: 400px; /* Atur tinggi maksimum gambar */
+    display: block;
+}
+
+/* Responsif untuk perangkat dengan lebar layar <= 768px */
+@media screen and (max-width: 400px) {
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .gambar {
+        max-height: 200px; /* Atur tinggi maksimum gambar untuk perangkat kecil */
+    }
+}
